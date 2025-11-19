@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: User API
+  version: "1.0.0"
+  description: “这是一个用户 API 的示例”
+paths:
+  /users:
+    get:
+      summary: 获取所有用户
+      responses:
+        '200':
+          description: 返回用户列表
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
