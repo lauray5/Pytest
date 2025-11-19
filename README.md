@@ -1,16 +1,21 @@
-├── page/                # 页面对象层（Page Objects）
-│   ├── login_page.py    # 示例：登录页元素与操作
-│   ├── home_page.py     # 示例：首页元素与操作
-│   └── ...              
-│
-├── tests/               # 测试用例层（Test Cases）
-│   ├── test_login.py    # 示例：登录功能测试
-│   ├── test_search.py   # 示例：搜索功能测试
+```
+├── page/                     # Page Object layer
+│   ├── login_page.py         # Login page actions & elements
+│   ├── home_page.py          # Home page actions & elements
 │   └── ...
 │
-├── util/                # 工具&公共方法层
+├── tests/                    # Test cases
+│   ├── test_login.py         # Login feature tests
+│   ├── test_search.py        # Search feature tests
 │   └── ...
 │
-├── requirements.txt     # 项目依赖
-├── README.md            # 项目说明文档
+├── util/                     # Utilities & common functions
+│   ├── logger.py             # Log wrapper
+│   ├── config.py             # Config loader
+│   ├── driver_factory.py     # WebDriver initialization
+│   └── ...
+│
+├── requirements.txt          # Project dependencies
+├── README.md                 # Documentation
 └── .gitignore
+```
